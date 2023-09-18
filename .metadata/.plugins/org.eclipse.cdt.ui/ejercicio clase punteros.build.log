@@ -1,0 +1,7 @@
+15:40:36 **** Incremental Build of configuration Debug for project ejercicio clase punteros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio clase punteros.o" "..\\src\\ejercicio clase punteros.c" 
+gcc -o "ejercicio clase punteros.exe" "src\\ejercicio clase punteros.o" 
+
+15:40:36 Build Finished. 0 errors, 0 warnings. (took 300ms)
+

@@ -1,0 +1,60 @@
+/*
+ ============================================================================
+ Name        : bibliotecas.c
+ Author      : mauro
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "arrive.h"
+#include <string.h>
+#include <ctype.h>
+#include "cadenaArrayChar.h"
+#include "LinkedList.h"
+
+
+struct
+{
+	char sexo;
+}typedef eEmpleado;
+
+
+
+int filtrarMujeres(eEmpleado* emp);
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+	LinkedList* listaEmpleados = NULL;
+	eEmpleado empleado1;
+
+
+	int (*pF)(eEmpleado*);
+
+	pF=filtrarMujeres;
+
+	listaProductos=ll_newLinkedList();
+	if(listaProductos!=NULL)
+	{
+		ll_add(listaProductos,&producto1);
+		ll_filter(listaProductos,pF);
+	}
+
+}
+
+int filtrarMujeres(eEmpleado* emp)
+{
+    int retorno = 0;
+    if(emp != NULL){
+
+     if(emp->sexo == 'f'){
+        retorno = 1;
+     }
+
+    }
+    return retorno;
+}

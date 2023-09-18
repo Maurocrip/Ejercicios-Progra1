@@ -1,0 +1,7 @@
+11:01:03 **** Incremental Build of configuration Debug for project parcialito 2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parcialito 2.o" "..\\src\\parcialito 2.c" 
+gcc -o "parcialito 2.exe" "src\\parcialito 2.o" 
+
+11:01:03 Build Finished. 0 errors, 0 warnings. (took 348ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ejercicio en clase de programacion&apos; to &apos;funciones de array de caracteres&apos;" description="Rename resource &apos;ejercicio en clase de programacion&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ejercicio en clase de programacion" name="funciones de array de caracteres" stamp="1651245842740" updateReferences="true"/>
+</session>

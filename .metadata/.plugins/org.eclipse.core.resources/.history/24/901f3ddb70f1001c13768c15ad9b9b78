@@ -1,0 +1,79 @@
+/*
+ ============================================================================
+ Name        : bibliotecas.c
+ Author      : mauro
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "arrive.h"
+#include <string.h>
+#include <ctype.h>
+#include "cadenaArrayChar.h"
+#include "LinkedList.h"
+
+
+struct
+{
+	char sexo;
+}typedef eEmpleado;
+
+
+
+int filtrarMujeres(eEmpleado* emp);
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+	LinkedList* listaEmpleados = NULL;
+	LinkedList* listaEmpleadosFiltrados = NULL;
+	eEmpleado empleado1;
+	eEmpleado empleado2;
+	eEmpleado empleado3;
+	eEmpleado empleado4;
+	eEmpleado empleado5;
+
+
+	int (*pF)(eEmpleado*);
+
+	pF=filtrarMujeres;
+	empleado1.sexo='m';
+	empleado2.sexo='f';
+	empleado3.sexo='m';
+	empleado4.sexo='f';
+	empleado5.sexo='m';
+
+
+	listaEmpleados=ll_newLinkedList();
+	if(listaEmpleados!=NULL)
+	{
+		ll_add(listaEmpleados,&empleado1);
+		ll_add(listaEmpleados,&empleado2);
+		ll_add(listaEmpleados,&empleado3);
+		ll_add(listaEmpleados,&empleado4);
+		ll_add(listaEmpleados,&empleado5);
+		listaEmpleadosFiltrados=ll_filter(listaEmpleados,pF);
+	}
+
+
+
+
+
+}
+
+int filtrarMujeres(eEmpleado* emp)
+{
+    int retorno = 0;
+    if(emp != NULL){
+
+     if(emp->sexo == 'f'){
+        retorno = 1;
+     }
+
+    }
+    return retorno;
+}

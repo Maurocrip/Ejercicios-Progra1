@@ -1,0 +1,7 @@
+16:33:57 **** Incremental Build of configuration Debug for project archivos ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\archivos.o" "..\\src\\archivos.c" 
+gcc -o archivos.exe "src\\archivos.o" 
+
+16:33:57 Build Finished. 0 errors, 0 warnings. (took 305ms)
+

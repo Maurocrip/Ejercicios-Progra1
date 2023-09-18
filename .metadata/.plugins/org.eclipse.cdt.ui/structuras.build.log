@@ -1,0 +1,7 @@
+23:24:50 **** Incremental Build of configuration Debug for project structuras ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structuras.o" "..\\src\\structuras.c" 
+gcc -o structuras.exe "src\\funcionesMasEstructuras.o" "src\\structuras.o" 
+
+23:24:50 Build Finished. 0 errors, 0 warnings. (took 350ms)
+

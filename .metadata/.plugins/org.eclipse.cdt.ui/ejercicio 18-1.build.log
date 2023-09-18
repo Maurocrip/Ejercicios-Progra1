@@ -1,0 +1,7 @@
+17:06:18 **** Incremental Build of configuration Debug for project ejercicio 18-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\archivos.o" "..\\src\\archivos.c" 
+gcc -o "ejercicio 18-1.exe" "src\\archivos.o" "src\\ejercicio 18-1.o" 
+
+17:06:19 Build Finished. 0 errors, 0 warnings. (took 312ms)
+

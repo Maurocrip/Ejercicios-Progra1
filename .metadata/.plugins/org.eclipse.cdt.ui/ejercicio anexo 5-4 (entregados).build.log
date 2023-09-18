@@ -1,0 +1,8 @@
+00:56:13 **** Rebuild of configuration Debug for project ejercicio anexo 5-4 (entregados) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array.o" "..\\src\\array.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\anexo 5-4.o" "..\\src\\anexo 5-4.c" 
+gcc -o "ejercicio anexo 5-4 (entregados).exe" "src\\anexo 5-4.o" "src\\array.o" 
+
+00:56:14 Build Finished. 0 errors, 0 warnings. (took 504ms)
+

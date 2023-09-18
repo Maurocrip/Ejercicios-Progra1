@@ -1,0 +1,7 @@
+02:10:11 **** Incremental Build of configuration Debug for project anexo 5-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array.o" "..\\src\\array.c" 
+gcc -o "anexo 5-4.exe" "src\\anexo 5-4.o" "src\\array.o" 
+
+02:10:12 Build Finished. 0 errors, 0 warnings. (took 347ms)
+

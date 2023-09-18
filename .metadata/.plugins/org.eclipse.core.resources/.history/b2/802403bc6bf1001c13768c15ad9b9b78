@@ -1,0 +1,61 @@
+/*
+ ============================================================================
+ Name        : bibliotecas.c
+ Author      : mauro
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "arrive.h"
+#include <string.h>
+#include <ctype.h>
+#include "cadenaArrayChar.h"
+#include "LinkedList.h"
+
+
+struct
+{
+	float precioFinal;
+	float precioUnitario;
+	int cantidad;
+}typedef Producto;
+
+
+
+void calcularPrecioFinal(Producto* p);
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+	LinkedList* listaProductos = NULL;
+	Producto producto1;
+
+
+	void (*pF)(void* p);
+
+	pF=calcularPrecioFinal;
+	producto1.cantidad=5;
+	producto1.precioUnitario=45;
+
+	listaProductos=ll_newLinkedList();
+	if(listaProductos!=NULL)
+	{
+		ll_add(listaProductos,&producto1);
+		ll_map(listaProductos,pF);
+		printf("%f",producto1.precioFinal);
+	}
+
+}
+
+void calcularPrecioFinal(Producto* p)
+{
+    if(p != NULL)
+    {
+        p->precioFinal = p->precioUnitario*p->cantidad;
+    }
+return;
+}

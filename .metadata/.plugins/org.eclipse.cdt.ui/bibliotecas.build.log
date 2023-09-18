@@ -1,0 +1,17 @@
+17:01:34 **** Incremental Build of configuration Debug for project bibliotecas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\bibliotecas.o" "..\\src\\bibliotecas.c" 
+..\src\bibliotecas.c: In function 'main':
+..\src\bibliotecas.c:48:25: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   48 |   ll_map(listaProductos,*pF);
+      |                         ^~~
+      |                         |
+      |                         void (*)(Producto *) {aka void (*)(struct <anonymous> *)}
+In file included from ..\src\bibliotecas.c:17:
+..\src\LinkedList.h:40:38: note: expected 'void (*)(void *)' but argument is of type 'void (*)(Producto *)' {aka 'void (*)(struct <anonymous> *)'}
+   40 | void ll_map(LinkedList* this, void (*fn)(void*));
+      |                               ~~~~~~~^~~~~~~~~~
+gcc -o bibliotecas.exe "src\\arrive.o" "src\\bibliotecas.o" "src\\cadenaArrayChar.o" "src\\linkedList.o" "src\\temperaturas.o" 
+
+17:01:34 Build Finished. 0 errors, 1 warnings. (took 355ms)
+

@@ -1,0 +1,8 @@
+01:40:35 **** Incremental Build of configuration Debug for project ejercicio 5-3 anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio 5-3 anexo.o" "..\\src\\ejercicio 5-3 anexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array.o" "..\\src\\array.c" 
+gcc -o "ejercicio 5-3 anexo.exe" "src\\array.o" "src\\ejercicio 5-3 anexo.o" 
+
+01:40:35 Build Finished. 0 errors, 0 warnings. (took 495ms)
+
